@@ -151,21 +151,147 @@
                                      <h5>Learn Following Basic Commands</h5>
                                      <ul>
                                         <li>git config</li>
+                                        <p>Usage: git config –global user.name “[name]”</p>
+                                        <p>Usage: git config –global user.email “[email address]”</p>
+                                        <p>config command is used to set the author details this used with your commits.</p>
                                         <li>git init</li>
+                                        <p>Is Used to Create new Repository and when run the command it will create .git folder it contains meta data of git repo.<br>
+                                        <code>  
+                                        git init
+                                        </code>
+                                           Creates .git folder. <br>
+                                        <code>   
+                                        git add README.md <br>
+                                      </code>
+                                           Added sample test file.<br>
+                                        <code>
+                                        git commit -m "first commit"<br>
+                                        </code>
+                                           Commitig test file in local repo.<br>
+                                        <code>
+                                        git remote add origin https://github.com/repoName/Test.git<br>
+                                        </code>
+                                           Addig remote repo.<br>
+                                        <code>
+                                        git push -u origin master<br>
+                                        </code>
+                                           Push the changes to remote repo  <br>
+                                        </p>
                                         <li>git clone</li>
+                                        <p>
+                                          It is Used to checkout the code from the git repository.The following command clone the code from master.<br>
+                                          <code>
+                                            git clone https://github.com/repoName/Test.git
+                                          </code><br>
+                                           But developer works on his branch right then how can clone the perticular branch code.
+                                           <code><br>
+                                            git clone -b <branchName> https://github.com/repoName/Test.git
+                                          </code>
+                                        </p>
                                         <li>git add</li>
+                                        <p>
+                                          It is used to add the code changes file to local repo and then we can commit and those file and push the code into remote repository.<br>
+
+                                          <code>
+                                            git add <filePath>
+                                          </code><br>
+
+                                          If you want to add the all the file then use the following command.<br>
+
+                                          <code>
+                                            git add .
+                                          </code><br>
+
+                                        </p>
                                         <li>git commit</li>
+                                        <p>
+                                          It is used for commiting the code change file.it will commit the changes in to local repo then we push code to remote repo.<br>
+                                          <code>
+                                            git commit -m "commit message"
+                                          </code>
+                                        </p>
                                         <li>git push</li>
+                                        <p>
+                                          It used for to push the code to remote repository.before push the code first check you are in which branch using followign command<br>
+                                          <code>
+                                            git branch
+                                          </code>
+
+                                          <code>
+                                            git push
+                                          </code>
+
+                                        </p>
                                         <li>git pull</li>
+                                        <p>
+                                          It used for to pull the code changes from remote repo to local machine.<br>
+                                          <code>
+                                            git pull 
+                                          </code>
+                                        </p>
                                         <li>git reset</li>
+                                        <p>
+                                        It used for to reset the added file from staging area.it mean usally you are adding files using git add command it will add those files in to staging area.<br>
+
+                                        in some case you dont want to commit the some the you need to reset the file from staging area.<br>
+
+                                        <code>
+                                          git reset
+                                        </code>
+                                        </p>
+
                                         <li>git status</li>
+                                        <p>
+                                          It used from to check the local repo and remote are in sink or not it will show if any file are not update to remote repo.<br>
+
+                                          <code>
+                                            git status
+                                          </code>
+                                        </p>
+
                                         <li>git log</li>
+                                        <p>
+                                          It used for check commit log. it will show all commit logs.
+                                        </p>
                                         <li>git branch</li>
+                                        <p>
+                                          It used to check the current branch.<br>
+
+                                          if you want to check all branch which are present then use the following command.<br>
+
+                                          <code>
+                                            git branch -a
+                                          </code>
+                                        </p>
                                         <li>git checkout</li>
+                                        <p>
+                                          It Used for checnging one branch to another branch.
+                                        </p>
                                         <li>git push</li>
+                                        <p>
+                                          It Used for to push code to remote repository.
+                                        </p>
                                         <li>git pull</li>
+                                        <p>
+                                          It used for to pull the code from remote repo.
+                                        </p>
                                         <li>git stash</li>
-                                    </ul>                                   
+                                        <p>
+                                          It used for while pulling remote repo code to local repo some case you will get conflicts thats you save local repo change the pull the remote repo chnages.<br>
+
+                                          git stash will save local change to some internal memory.<br>
+
+                                          <code>
+                                            git stash
+                                          </code>
+                                          After pulling the code then you can used the following command to re load the local changes which your saved using git stash.<br>
+
+                                          <code>
+                                            
+                                            git stash apply
+                                          </code>
+                                        </p>
+                                    </ul>                             
                                  
                                  
                                   <!-- Post Author Bio Box Start -->
